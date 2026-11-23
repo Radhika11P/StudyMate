@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>StudyMate</h1>
+    <p>Your personal student task planner</p>
+
+    <div class="container">
+    <h2>Add a Task</h2>
+
+    <input type="text" id="taskName" placeholder="Enter task name">
+     <select id="priority">
+    <option value="">Select Priority</option>
+    <option value="High">High Priority</option>
+    <option value="Medium">Medium Priority</option>
+    <option value="Low">Low Priority</option>
+</select>
+    <input type="text" id="subject" placeholder="Enter subject">
+
+    <input type="date" id="deadline">
+
+    <button id="addBtn">Add Task</button>
+</div>
+
+<div class="task-list">
+    <h2>My Tasks</h2>
+
+<div class="task-stats">
+    <div class="stat-box">
+        <h3 id="totalTasks">0</h3>
+        <p>Total Tasks</p>
+    </div>
+
+    <div class="stat-box">
+        <h3 id="pendingTasks">0</h3>
+        <p>Pending</p>
+    </div>
+
+    <div class="stat-box">
+        <h3 id="completedTasks">0</h3>
+        <p>Completed</p>
+    </div>
+</div>
+
+<div class="task-filters">
+    <button class="filter-btn active" data-filter="all">All Tasks</button>
+    <button class="filter-btn" data-filter="pending">Pending</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+</div>
+<select id="sortTasks">
+    <option value="">Sort Tasks By</option>
+    <option value="earliest">Nearest Deadline First</option>
+    <option value="latest">Farthest Deadline First</option>
+</select>
+<div id="tasks"></div>
+<input
+    type="text"
+    id="searchInput"
+    placeholder="Search your tasks..."
+>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
