@@ -294,4 +294,6 @@ button:hover {
 .stat-box p {
     font-size: 13px;
     font-weight: bold;
+    color: #5142a8;
+    margin-bottom: 0;
 }
